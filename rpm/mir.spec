@@ -35,7 +35,7 @@
 %global mirplatforminput_sover 11
 
 Name:           mir
-Version:        2.31.0~rc
+Version:        2.31.0
 Release:        0%{?dist}
 Summary:        Next generation Wayland display server toolkit
 
@@ -333,12 +333,36 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/miral-shell.desktop
 
 
 %changelog
-* Wed Oct 14 2026 Mir CI Bot <mir-ci-bot@canonical.com> - 2.31.0~rc-1
+* Wed Oct 14 2026 Mir CI Bot <mir-ci-bot@canonical.com> - 2.31.0-1
+- Begin development for 2.31.0 release
 - Begin Release Candidate for 2.31.0 release
 
-* Thu Sep 24 2026 Mir CI Bot <mir-ci-bot@canonical.com> - 2.30.0-1
+- New upstream release 2.31.0
 
-- New upstream release 2.30.0
+  - ABI summary:
+
+    - miral ABI unchanged at <version>
+    - mircommon ABI unchanged at <version>
+    - mircore ABI bumped to <version>
+    - miroil ABI unchanged at <version>
+    - mirplatform ABI bumped to <version>
+    - mirserver ABI unchanged at <version>
+    - mirwayland ABI bumped to <version>
+    - mirplatformgraphics ABI unchanged at <version>
+    - mirinputplatform ABI bumped to <version>
+
+  - Enhancements:
+
+    - Pull request title (#<PR number>)
+
+  - Bugs fixed:
+
+    - Issue title (#<Issue number>)
+
+  - Documentation:
+
+    - Pull request title (#<PR number>)
+
 
   - ABI summary:
 

@@ -1,4 +1,4 @@
-mir (2.31.0) UNRELEASED; urgency=medium
+mir (2.31.0-0ubuntu26.04) noble; urgency=medium
 
   * Begin development for 2.31.0 release
   * Begin Release Candidate for 2.31.0 release
@@ -29,7 +29,7 @@ mir (2.31.0) UNRELEASED; urgency=medium
 
       - Pull request title (#<PR number>)
 
- -- Mir CI Bot <mir-ci-bot@canonical.com>  Wed, 14 Oct 2026 15:53:38 +0000
+ -- Mir CI Bot <mir-ci-bot@canonical.com>  Wed, 14 Oct 2026 16:08:41 +0000
 
 mir (2.30.0-0ubuntu26.04) noble; urgency=medium
 
