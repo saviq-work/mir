@@ -7,27 +7,40 @@ mir (2.31.0-0ubuntu26.04) noble; urgency=medium
 
     - ABI summary:
 
-      - miral ABI unchanged at <version>
-      - mircommon ABI unchanged at <version>
-      - mircore ABI bumped to <version>
-      - miroil ABI unchanged at <version>
-      - mirplatform ABI bumped to <version>
-      - mirserver ABI unchanged at <version>
-      - mirwayland ABI bumped to <version>
-      - mirplatformgraphics ABI unchanged at <version>
-      - mirinputplatform ABI bumped to <version>
+      - miral ABI unchanged at 8
+      - mircommon ABI bumped to 14
+      - mircore ABI unchanged at 3
+      - miroil ABI unchanged at 10
+      - mirplatform ABI bumped to 36
+      - mirserver ABI bumped to 70
+      - mirwayland ABI unchanged at 7
+      - mirplatformgraphics ABI bumped to 25
+      - mirinputplatform ABI unchanged at 11
 
     - Enhancements:
 
-      - Pull request title (#<PR number>)
+      - Add a Mir SDK for building compositor projects in workshops [#5294](https://github.com/canonical/mir/pull/5294)
+      - Add a freely positioned magnifier with pointer/touch controls and configurable behavior [#5135](https://github.com/canonical/mir/pull/5135), [#5207](https://github.com/canonical/mir/pull/5207)
+      - Expose output configuration through MirAL [#5224](https://github.com/canonical/mir/pull/5224)
+      - Add the `ext_foreign_buffer_v1` protocol for sharing image-capture source contents with client surfaces [#5203](https://github.com/canonical/mir/pull/5203)
+      - Support libinput's circular scrolling mode [#5246](https://github.com/canonical/mir/pull/5246)
+      - Add presentation planning and result reporting for display providers [#5290](https://github.com/canonical/mir/pull/5290)
+      - Expose physical display addresses through `DisplayInfo` [#5291](https://github.com/canonical/mir/pull/5291)
+      - Add a blitter rendering provider and its software EGL support [#5213](https://github.com/canonical/mir/pull/5213), [#5293](https://github.com/canonical/mir/pull/5293)
 
     - Bugs fixed:
 
-      - Issue title (#<Issue number>)
+      - Fix input event scaling when output transformations are applied [#5292](https://github.com/canonical/mir/pull/5292)
+      - Prevent fullscreen composition bypass when output filters or transformations are active [#5310](https://github.com/canonical/mir/pull/5310)
+      - Enforce xdg-decoration rules for unconfigured surfaces [#5313](https://github.com/canonical/mir/pull/5313)
+      - Fix the MirAL splash screen's jumpy fade [#5297](https://github.com/canonical/mir/pull/5297)
+      - Fix input-trigger matching when extra modifiers are pressed [#5249](https://github.com/canonical/mir/pull/5249)
+      - Apply output configuration strategies when the controller becomes available [#5321](https://github.com/canonical/mir/pull/5321)
+      - Confirm display configuration changes after hardware updates [#5259](https://github.com/canonical/mir/pull/5259)
 
     - Documentation:
 
-      - Pull request title (#<PR number>)
+      - Document when fullscreen composition bypass is disabled [#5310](https://github.com/canonical/mir/pull/5310)
 
  -- Mir CI Bot <mir-ci-bot@canonical.com>  Wed, 14 Oct 2026 16:08:41 +0000
 
