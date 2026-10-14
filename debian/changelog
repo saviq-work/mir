@@ -1,7 +1,5 @@
-mir (2.31.0) UNRELEASED; urgency=medium
+mir (2.31.0-0ubuntu26.04) resolute; urgency=medium
 
-  * Begin development for 2.31.0 release
-  * Begin Release Candidate for 2.31.0 release
 
   * New upstream release 2.31.0
 
@@ -37,7 +35,7 @@ mir (2.31.0) UNRELEASED; urgency=medium
       - Enforce xdg-decoration-v1 buffer and configure rules [#5313](https://github.com/canonical/mir/pull/5313)
       - Apply output configuration strategies set before initialization completes [#5321](https://github.com/canonical/mir/pull/5321)
 
- -- Mir CI Bot <mir-ci-bot@canonical.com>  Wed, 14 Oct 2026 17:02:44 +0000
+ -- Mir CI Bot <mir-ci-bot@canonical.com>  Wed, 14 Oct 2026 17:31:30 +0000
 
 mir (2.30.0-0ubuntu26.04) noble; urgency=medium
 
