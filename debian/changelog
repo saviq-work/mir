@@ -1,4 +1,4 @@
-mir (2.31.0) UNRELEASED; urgency=medium
+mir (2.31.0-0ubuntu26.04) resolute; urgency=medium
 
   * New upstream release 2.31.0
 
@@ -40,7 +40,7 @@ mir (2.31.0) UNRELEASED; urgency=medium
 
       - Document accessibility and composition-bypass behavior [#5135](https://github.com/canonical/mir/pull/5135), [#5310](https://github.com/canonical/mir/pull/5310)
 
- -- Mir CI Bot <mir-ci-bot@canonical.com>  Thu, 15 Oct 2026 11:56:48 +0000
+ -- Mir CI Bot <mir-ci-bot@canonical.com>  Thu, 15 Oct 2026 12:21:20 +0000
 
 mir (2.30.0-0ubuntu26.04) noble; urgency=medium
 

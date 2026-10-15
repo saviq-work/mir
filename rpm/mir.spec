@@ -35,7 +35,7 @@
 %global mirplatforminput_sover 11
 
 Name:           mir
-Version:        2.31.0~rc
+Version:        2.31.0
 Release:        0%{?dist}
 Summary:        Next generation Wayland display server toolkit
 
@@ -333,8 +333,47 @@ desktop-file-validate %{buildroot}%{_datadir}/applications/miral-shell.desktop
 
 
 %changelog
-* Thu Oct 15 2026 Mir CI Bot <mir-ci-bot@canonical.com> - 2.31.0~rc-1
-- Begin Release Candidate for 2.31.0 release
+* Thu Oct 15 2026 Mir CI Bot <mir-ci-bot@canonical.com> - 2.31.0-1
+- New upstream release 2.31.0
+
+  - ABI summary:
+
+    - miral ABI unchanged at 8
+    - mircommon ABI bumped to 14
+    - mircore ABI unchanged at 3
+    - miroil ABI unchanged at 10
+    - mirplatform ABI bumped to 36
+    - mirserver ABI bumped to 70
+    - mirwayland ABI unchanged at 7
+    - mirplatformgraphics ABI bumped to 25
+    - mirinputplatform ABI unchanged at 11
+
+  - Enhancements:
+
+    - Require libxml++ 5.0 to build Mir
+    - Require libwayland 1.24 for the MirAL splash animation [#5297](https://github.com/canonical/mir/pull/5297)
+    - Expose output configuration through libmiral [#5224](https://github.com/canonical/mir/pull/5224)
+    - Add a freely positioned magnifier with on-screen controls [#5135](https://github.com/canonical/mir/pull/5135), [#5207](https://github.com/canonical/mir/pull/5207)
+    - Add a Mir SDK for Workshop [#5294](https://github.com/canonical/mir/pull/5294)
+    - Add display presentation planning and result reporting [#5290](https://github.com/canonical/mir/pull/5290)
+    - Add a blitter rendering provider and framebuffer-pool support [#5213](https://github.com/canonical/mir/pull/5213), [#5293](https://github.com/canonical/mir/pull/5293)
+    - Expose physical display addresses in `DisplayInfo` [#5291](https://github.com/canonical/mir/pull/5291)
+    - Add the testing-phase `ext_foreign_buffer_v1` protocol definition [#5203](https://github.com/canonical/mir/pull/5203)
+    - Support libinput's circular-scrolling mode [#5246](https://github.com/canonical/mir/pull/5246)
+
+  - Bugs fixed:
+
+    - Call `DisplayConfigurationPolicy::confirm()` after applying output changes [#5259](https://github.com/canonical/mir/pull/5259)
+    - Scale input events correctly with display transformations [#5292](https://github.com/canonical/mir/pull/5292)
+    - Correct input-trigger modifier checks [#5249](https://github.com/canonical/mir/pull/5249)
+    - Disable fullscreen bypass when output filters or transformations are active [#5310](https://github.com/canonical/mir/pull/5310)
+    - Enforce xdg-decoration v1 configure rules [#5313](https://github.com/canonical/mir/pull/5313)
+    - Fix MirAL splash-screen fade-in [#5297](https://github.com/canonical/mir/pull/5297)
+
+  - Documentation:
+
+    - Document accessibility and composition-bypass behavior [#5135](https://github.com/canonical/mir/pull/5135), [#5310](https://github.com/canonical/mir/pull/5310)
+
 
 * Thu Sep 24 2026 Mir CI Bot <mir-ci-bot@canonical.com> - 2.30.0-1
 
